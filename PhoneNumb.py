@@ -67,7 +67,12 @@ def confirm(place):
     global window
     place.configure(text=str(int(float(Number))))
 
-    goodConf = Label(window ,text = "your phone number has been saved as : " + Number, font = ("Arial", 15))
+    goodConf = Label(
+        window,
+        text=f"your phone number has been saved as : {Number}",
+        font=("Arial", 15),
+    )
+
     goodConf.grid(row = 9, column = 0, columnspan = 4)
 
 createInterface()
